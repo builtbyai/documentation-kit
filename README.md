@@ -1,20 +1,36 @@
-# Documentation Templates Library
+<div align="center">
 
-**A curated collection of 58 production-ready HTML and Markdown templates for beautiful, professional documentation.**
+# 📄 Documentation Kit
 
-Great documentation is a design problem as much as a writing one. This library is a set of drop-in starting points I built while writing READMEs, API references, dashboards, and long-form documents — everything from a GitHub-flavored README to a print-ready magazine layout. Copy a file, swap in your content, and ship.
+**58 dependency-free HTML & Markdown templates for documentation that looks as credible as it reads.**
+
+READMEs · API references · dashboards · architecture docs · magazine & print layouts · Mermaid galleries
+
+[![Live gallery](https://img.shields.io/badge/▶_live_gallery-builtbyai.github.io-5aa2ff?style=for-the-badge)](https://builtbyai.github.io/documentation-kit/)
+
+![Templates](https://img.shields.io/badge/templates-58-1f6feb)
+![HTML](https://img.shields.io/badge/HTML-20-e34c26)
+![Markdown](https://img.shields.io/badge/Markdown-38-083fa1)
+![Dependencies](https://img.shields.io/badge/dependencies-0-2ea043)
+![Build step](https://img.shields.io/badge/build_step-none-2ea043)
+![License](https://img.shields.io/badge/license-MIT-8957e5)
+
+</div>
 
 ---
+
+> **▶ Browse the whole library in your browser:** **[builtbyai.github.io/documentation-kit](https://builtbyai.github.io/documentation-kit/)**
+> Every HTML layout previews live; every Markdown template renders on GitHub. No install, no build.
+
+Great documentation is a design problem as much as a writing one. This is a set of drop-in starting points I built while writing READMEs, API references, dashboards, and long-form documents — everything from a GitHub-flavored README to a print-ready magazine layout. **Copy a file, swap in your content, ship.**
 
 ## Why this exists
 
-Most documentation stalls at a blank page. You know *what* you want to say but not how to make it look credible, scannable, and finished. These templates solve the "how it looks" half so you can focus on the words:
+Most documentation stalls at a blank page. You know *what* to say but not how to make it look credible, scannable, and finished. These templates solve the "how it looks" half so you can focus on the words:
 
 - **Markdown templates** render cleanly on GitHub, in Obsidian, and in most static-site generators — no build step, no dependencies.
 - **HTML templates** are single-file, self-contained pages (inline CSS, web-font links) that open straight in a browser and print to PDF without a toolchain.
-- Everything uses **sample data only** (`example.com`, `555-0100`, placeholder names), so there's nothing to scrub before you reuse it.
-
----
+- Everything uses **fictional sample data only** (`example.com`, `555-0100`, placeholder names) — nothing to scrub before you reuse it.
 
 ## What's inside
 
@@ -27,18 +43,17 @@ Most documentation stalls at a blank page. You know *what* you want to say but n
 | **Total template files** | **58** | | |
 
 ```
-documentation-templates/
+documentation-kit/
+├── index.html   # generated gallery — links every template (served via GitHub Pages)
 ├── HTML/        # 20 self-contained, print-ready HTML page layouts
 └── Markdown/    # 38 Markdown documentation & component templates
 ```
-
----
 
 ## Gallery
 
 ### HTML page layouts (`HTML/`)
 
-Each file is a complete, standalone page — open it in any browser or export to PDF.
+Each file is a complete, standalone page — open it in any browser or export to PDF. **[Preview them all live →](https://builtbyai.github.io/documentation-kit/)**
 
 | File | Layout | Best for |
 | --- | --- | --- |
@@ -71,27 +86,21 @@ Each file is a complete, standalone page — open it in any browser or export to
 
 > Browse [`Markdown/INDEX.md`](Markdown/INDEX.md) for the complete, categorized list.
 
----
-
 ## Features
 
 - **Zero dependencies.** No npm install, no build step. Markdown renders anywhere; HTML files are single-file and self-contained.
 - **Copy-paste components.** Cards, grids, callouts, metric tiles, and styled tables you can lift into your own docs.
 - **GitHub-native.** The Markdown templates use only formatting that renders on GitHub — inline HTML, tables, task lists, and Mermaid.
 - **Print-ready.** HTML layouts are tuned for A4/Letter and export cleanly to PDF from the browser's print dialog.
-- **Theming.** README templates ship in six color themes; HTML layouts use CSS custom properties so a palette swap is a few variables.
+- **Theming.** README templates ship in six color themes; HTML layouts use CSS custom properties, so a palette swap is a few variables.
 - **Safe sample data.** Every name, email, and phone number is fictional placeholder data.
-
----
 
 ## Tech Stack
 
 - **Markdown** — GitHub Flavored Markdown (GFM), Obsidian callout syntax, Mermaid.js diagrams
 - **HTML5 + CSS3** — semantic markup, CSS custom properties, Flexbox & Grid, inline styles for portability
-- **Web fonts** — Google Fonts (Inter and friends) via `<link>`; degrade gracefully to system fonts
+- **Web fonts** — Google Fonts via `<link>`; degrade gracefully to system fonts
 - **No JavaScript, no framework, no bundler** — by design
-
----
 
 ## How to use
 
@@ -104,36 +113,23 @@ Each file is a complete, standalone page — open it in any browser or export to
 
 **HTML template**
 
-1. Pick a file from `HTML/` and open it in a browser to preview.
+1. Pick a file from `HTML/` and open it in a browser to preview (or use the [live gallery](https://builtbyai.github.io/documentation-kit/)).
 2. Edit the content inline; adjust the CSS variables in `:root` to rebrand.
 3. To produce a PDF, use the browser's **Print → Save as PDF** (layouts are print-tuned).
 
 ```bash
 # Clone and browse locally
-git clone https://github.com/builtbyai/documentation-templates.git
-cd documentation-templates
+git clone https://github.com/builtbyai/documentation-kit.git
+cd documentation-kit
 
-# Open an HTML template (macOS `open`, Linux `xdg-open`, Windows `start`)
+# Open the gallery, or any single template
+open index.html                      # macOS  (Linux: xdg-open, Windows: start)
 open HTML/08_magazine_light.html
 ```
 
----
+## What this demonstrates
 
-## Screenshots
-
-> Rendered previews of a few HTML layouts. To regenerate: open the file in a browser and capture, or export via **Print → Save as PDF**.
-
-| Magazine (light) | Annual report (corporate) | Product catalog |
-| --- | --- | --- |
-| _`docs/screenshots/magazine_light.png`_ | _`docs/screenshots/annual_report.png`_ | _`docs/screenshots/catalog.png`_ |
-
-| Lookbook | Portfolio | Wedding album |
-| --- | --- | --- |
-| _`docs/screenshots/lookbook.png`_ | _`docs/screenshots/portfolio.png`_ | _`docs/screenshots/wedding_album.png`_ |
-
-<!-- Add PNGs under docs/screenshots/ and swap the paths above for images:
-
----
+Beyond being reusable, this repo is a portfolio piece in **information design and documentation craft**: consistent visual systems across 58 artifacts, print-tuned CSS, a component vocabulary (cards/grids/callouts/metric tiles) that survives GitHub's Markdown sandbox, and a generated gallery that makes the whole set browsable in one click. Good docs are a product surface — this is what caring about that surface looks like.
 
 ## License
 
