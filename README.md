@@ -132,7 +132,6 @@ open HTML/08_magazine_light.html
 | _`docs/screenshots/lookbook.png`_ | _`docs/screenshots/portfolio.png`_ | _`docs/screenshots/wedding_album.png`_ |
 
 <!-- Add PNGs under docs/screenshots/ and swap the paths above for images:
-     ![Magazine light](docs/screenshots/magazine_light.png) -->
 
 ---
 
